@@ -12,7 +12,7 @@ class PackageConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     url = "https://github.com/simbahebinbo/conan-qtils.git"
     require = {
-        "Boost/1.84.0",
+        "boost/1.84.0",
         "fmt/10.1.1"
     }
 
