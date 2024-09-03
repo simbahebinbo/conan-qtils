@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-find_package(qtils CONFIG REQUIRED)
+find_package(qtils REQUIRED)
 
 add_executable(${PROJECT_NAME}
         main.cpp
