@@ -11,6 +11,10 @@ class PackageConan(ConanFile):
     license = "MIT"
     settings = "os", "compiler", "build_type", "arch"
     url = "https://github.com/simbahebinbo/conan-qtils.git"
+    require = {
+        "boost/1.84.0",
+        "fmt/10.1.1"
+    }
 
     def layout(self):
         cmake_layout(self)
