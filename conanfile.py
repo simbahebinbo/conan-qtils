@@ -42,7 +42,7 @@ class PackageConan(ConanFile):
     def package(self):
         # 将头文件安装到包的 include 目录中
         include_folder = os.path.join(self.source_folder, "src")
-        copy(self, "*.hpp", dst=os.path.join(self.package_folder, "include"), src=include_folder)
+        copy(self, "*.hpp", dst=os.path.join(self.package_folder, "include"), src=include_folder, keep_path=True)
 
     def package_info(self):
         # 只有头文件，没有库文件需要链接
